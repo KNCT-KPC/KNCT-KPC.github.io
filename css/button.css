@@ -1,0 +1,70 @@
+.button {
+    background: #ff6666; /* 背景色 */
+    color: #fff; /* 文字色 */
+    font-size: 17px; /* 文字サイズ */
+    line-height: 1.5; /* 行の高さ */
+    padding: 10px 65px; /* 余白（上下、左右） */
+    padding-left: 60px;
+    margin-top: 10px;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 3px;
+    background: #fff; /* 矢印の色 */
+    position: absolute;
+    right: 20px;
+    -webkit-transition: .3s; /* 速さ */
+    -o-transition: .3s; /* 速さ */
+    transition: .3s; /* 速さ */
+}
+.button::before {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    transform-origin: top right;
+}
+.button::after {
+    bottom: 50%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    -o-transform-origin: bottom right;
+    transform-origin: bottom right
+}
+.button:hover {
+    opacity: 0.8; /* 不透明度（マウスオーバー時） */
+    color: #fff; /* 文字色（マウスオーバー時） */
+}
+.button:hover::before {
+    margin-right: -3px; /* 矢印の移動距離（マウスオーバー時） */
+}
+.button:hover::after {
+    margin-right: -3px; /* 矢印の移動距離（マウスオーバー時） */
+}
+
+.other span {
+    display: inline-block;
+}
+
+@media screen and (max-width: 760px) {
+
+}

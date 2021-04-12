@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+.attention_box {
+    /* background-color: #F5EC49; */
+    background-color: #F5F093;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.introduction {
+    background: #f3f4f5;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 91%;
+    margin: 25px auto;
+    padding: 20px 0;
+    background: white;
+    border-radius: 10px;
+
+    /* box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 30%); */
+    box-shadow: 0 7px 20px rgba(0,0,45,0.12);
+}
+
+.imgbox {
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.infoimg {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.imgbox img {
+    border-radius: 5px;
+}
+
+.textbox{
+    width: 93%;
+    margin: 0 auto;
+}
+
+.infotext {
+    width: 100%;
+}
+
+.textbox h4 {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.textbox p {
+    font-size: 14px;
+}
+
+.other {
+    background-color: #97D9E1;
+    background-image: linear-gradient(0deg, #97D9E1 8%, #97e1ce 58%, #f3f4f5 95%);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 760px) {
+    
+    .attention_box {
+        padding-top: 5px;
+    }
+
+    .introduction {
+        padding-top: 80px;
+    }
+
+    .container {
+        padding: 0%;
+    }
+
+    .flexbox {
+        display: flex;
+        justify-content:center;
+    }
+    
+    .imgbox {
+        width: 100%;
+        margin: 15px 0 15px 15px;
+    }
+
+    .infoimg {
+        padding-top: 30px;
+    }
+    
+    .textbox{
+        width: 95%;
+        margin: 15px;
+    }
+
+    .infotext {
+        width: 100%;
+        margin: 0%;
+    }
+    
+    .container:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .container:nth-child(odd) .imgbox{
+        margin: 15px;
+    }
+
+    .container:nth-child(odd) .textbox{
+        margin: 15px 0 15px 15px;
+    }
+
+    /* .flexbox_third {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .flexbox_third .container {
+        width: 30%;
+        margin: 0%;
+    } */
+}

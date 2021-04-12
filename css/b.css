@@ -1,0 +1,29 @@
+.icon-wrapper {
+    margin: 0;
+    position: fixed;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background-color: aqua;
+}
+
+.icon-item{
+    margin: auto;
+    height: 8px;
+    width: 50px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.clicked .line1 {
+	transform: translateY(20px) rotate(-45deg);
+}
+.clicked .line2 {
+	opacity: 0;
+    transform: translateX(50%);
+}
+.clicked .line3 {
+	transform: translateY(-20px) rotate(45deg);
+}
