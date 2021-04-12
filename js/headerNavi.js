@@ -31,7 +31,7 @@ function ChangeMainVisualHeight() {
 	var header = document.getElementById('header');
 	var headerHeight = header.clientHeight;
 
-	$("#main_visual").css("margin-top", headerHeight);
+	$("#main_visual").css("padding-top", headerHeight);
 }
 
 window.addEventListener('DOMContentLoaded', function() {
